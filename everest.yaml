@@ -1,0 +1,6 @@
+- Name: SnugHelper
+  Version: 0.0.0-dev
+  DLL: src/bin/Debug/net452/SnugHelper.dll
+  Dependencies:
+    - Name: Everest
+      Version: 1.3471.0
