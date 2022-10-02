@@ -46,17 +46,17 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: main
-        path: src/bin/Debug/net452
+        path: Code/bin/Debug/net452
 
     - name: Create mod zip
-      run: zip -qq -r CommunalHelper.zip Ahorn/* Loenn Audio Dialog Graphics src/bin/Debug/net452 everest.yaml
+      run: zip -qq -r SnugHelper.zip Code/bin/Debug/net452 everest.yaml
 
     - name: Create Release
       id: release
       uses: softprops/action-gh-release@58fa4b7a8863f6beaf115a49196308842b8b0f06
       with:
-        name: CommunalHelper ${{ env.MOD_VERSION }}
-        files: CommunalHelper.zip
+        name: SnugHelper ${{ env.MOD_VERSION }}
+        files: SnugHelper.zip
         fail_on_unmatched_files: true
         prerelease: ${{ fromJSON(env.PRERELEASE) }}
 
