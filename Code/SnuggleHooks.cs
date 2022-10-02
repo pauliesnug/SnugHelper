@@ -1,11 +1,9 @@
-using System;
+namespace Celeste.Mod.SnugHelper {
+    public static class SnuggleHooks {
+        public static void Load() {
+        }
 
-namespace Celeste.Mod.SnugHelper; 
-
-public static class SnuggleHooks {
-    public static void Load() {
-    }
-
-    public static void Unload() {
+        public static void Unload() {
+        }
     }
 }
